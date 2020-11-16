@@ -1,0 +1,50 @@
+{
+  "name": "good-system/good-act",
+  "license": "MIT",
+  "description": "",
+  "keywords": [],
+  "homepage": "",
+  "authors": [
+    {
+      "name": "Harry Guo",
+      "homepage": "harry.guo@goodsystem.org",
+      "role": ""
+    }
+  ],
+  "require": {
+    "php": "^7.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.0|^9.0"
+  },
+  "suggest": {
+  },
+  "autoload": {
+    "psr-4": {
+      "GoodSystem\\GoodAct\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "GoodSystem\\Test\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.1-dev"
+    },
+    "laravel": {
+      "providers": [
+        "GoodSystem\\GoodAct\\GoodActServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
